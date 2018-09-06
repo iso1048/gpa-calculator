@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>weighted gpa calculator</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <head>
+  <title>weighted GPA calculator</title>
+  <meta charset="utf-8">
+</head>
+
+ <header id="header">
+      <h1>Weighted Grade Point Average Calculator</h1>
+      <h2>for Graduate Entry into Health Science Professional Programmes</h2>
+  </header>
+
+<div id="main-div">
+
+    <p id="notice">Please be aware that changes to the scoring for graduate entry into health science professional programmes will occur from 2019</p>
+ 
+  
+  <section id="about-sec" class="section">
+    <h3>Using the weighted GPA calculator</h3>
+    <ul>
+      <li>This is NOT an official GPA calculator - it is intended for personal use only</li>
+      <li>Begin by selecting the duration of your undergraduate degree</li>
+      <li>Input the credit value and grade acheived for each paper, then click 'Add'</li>
+      <li>All years must have a total of 120 credits input before the weighted GPA can be calculated - the placeholder number in the credit value input field keeps track of the credit left to input</li>
+      <li>Click 'Calculate GPA' once the form has been completely filled</li>
+      <li>Clicking 'Reset' will remove all data that has been filled</li>
+    </ul>
+  </section>
+  <!--about-sec-->
+
+  <section id="calculator-sec" class="section">
+    <h3>Weighted GPA Calculator</h3>
+    
+    <div id="select-duration-div">
+      <h4>Select the duration of your undergraduate degree</h4>
+      <div id="year-buttons-div">
+        <button class="year-btn button" id="3years">3 years</button>
+        <button class="year-btn button" id="4years">4 years</button>
+        <button class="year-btn button" id="5years">5 years</button>
+      </div>
+    </div>
+    <!--select-duration-div-->
+    
+    <div id="contain-noOfDivs"></div>
+      
+  </section><!--calculator-sec-->
+
+  <div id="your-gpa-div"></div>
+
+  <section id="how-sec" class="section">
+    <h3>How the weighted GPA is calculated</h3>
+    <ul>
+      <li>The best 120 credits/points scored each year are used in the calculation of the weighted GPA</li>
+      <li>A weighting factor ranging from 0.5 (first year of undergraduate degree) to 1.5 (final year of undergraduate degree) is assigned to each year of study - the increase of the weighting factor from one year to the next depends on the duration of the undergraduate degree (see below)
+        <ul>
+          <li>3 year degree: 0.50, 1.00, 1.50 (most recent year last)</li>
+          <li>4 year degree: 0.50, 0.80, 1.20, 1.50 (most recent year last)</li>
+          <li>5 year degree: 0.50, 0.75, 1.00, 1.25, 1.50 (most recent year last)</li>
+        </ul>
+      </li>
+      <li>Each paper is given a grade point value based on the 9-point scale
+        <ul>
+          <li>A+: 9</li>
+          <li>A: 8</li>
+          <li>A-: 7</li>
+          <li>B+: 6</li>
+          <li>B: 5</li>
+          <li>B-: 4</li>
+          <li>C+: 3</li>
+          <li>C: 2</li>
+          <li>C-: 1</li>
+          <li>fail: 0</li>
+        </ul>
+      </li>
+      <li>The score for each paper is calculated as follows: weighting factor &times credit value &times paper grade</li>
+      <li>The sum of all paper scores is divided by: the duration of the undergraduate degree &times 120</li>
+    </ul>
+    <!--be aware that changes in the scoring will be introduced in 2019-->
+  </section><!--how-sec-->
+
+  <footer id="footer">
+    <!--<p>webpage design based on University of Otago Website</p>-->
+  </footer>
+  
+</div><!--primary-div-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

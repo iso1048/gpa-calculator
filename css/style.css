@@ -1,0 +1,192 @@
+*{
+  box-sizing: border-box;
+  /*border: orange 1px dotted;*/
+  font-size: 10px;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  color: #333333;
+}
+body {
+  min-width: 300px;
+}
+#main-div{
+  width: 88%;
+  max-width: 820px;
+  min-width: 300px;
+  margin:auto;
+  background-color: white;
+}
+#header {
+  width: 100%;
+  padding: 3rem;
+  background-color: rgb(255,205,35);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+#notice {
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+}
+.section {
+  padding: 1.5rem 3rem;
+}
+h3 {
+  border-bottom: rgb(232,232,232) solid 1px;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.8rem;
+}
+li {
+  font-size: 1.6rem;
+  font-family:;
+}
+h4 {
+  font-size: 2rem; 
+}
+#year-buttons-div {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  
+}
+button:focus, select:focus, input:focus {
+  outline: 0;
+}
+.button, .add-btn, .god-btn{
+  font-size: 1.6rem;
+  font-family: "Times New Roman";
+  width: 150px;
+  height: 30px;
+  margin: 0px 20px 0px 20px;
+  border-radius: 30px;
+}
+.year-btn, .add-btn {
+  background-color: rgb(255,205,35);
+  border: solid 2px rgb(206,159,28);
+}
+.year-btn:hover, .add-btn:hover{
+  background-color: rgb(206,159,28);
+  cursor: pointer;
+}
+.add-btn{
+  max-width: 150px;
+  width: 90%;
+  margin:auto;
+  float: right;
+}
+.table {
+  width: 100%;
+}
+.top-row {
+  width: 100%;
+  background-color: #f1f4f8;
+  border-bottom: 1px solid rgb(228,228,228);
+}
+.t-data {
+  width: 33%;
+  font-size: 1.55rem;
+  padding: 0.6rem 0px;
+  padding-left: 0.5rem;
+  font-weight: 200;
+}
+.input-credit, .input-grade, .dropdown-list {
+  width: 94%;
+  margin: auto;
+  font-size: 1.5rem;
+  height: 25px;
+}
+.insert-above-this-row {
+  border-bottom: 1px solid rgb(228,228,228); 
+}
+#contain-noOfDivs {
+  display: none;
+}
+#error-p {
+  font-size: 1.5rem;
+  display: block;
+  text-align: right;
+}
+#god-btns-div {
+  text-align: center;
+  margin-top: 3rem;
+}
+.god-btn {
+  margin: 0.5rem;
+}
+#reset-btn {
+  background-color: rgb(206,4,7);
+  border: 2px solid rgb(135,0,0);
+  color: white;
+}
+#reset-btn:hover {
+  cursor: pointer;
+  background-color: rgb(135,0,0);
+}
+#calc-btn {
+  background-color: rgb(134,178,57);
+  border: 2px solid rgb(109,132,45);
+  color: white;
+}
+#calc-btn:hover {
+  cursor: pointer;
+  background-color: rgb(109,132,45);
+}
+.delete-btn {
+  text-align: center;
+}
+.delete-btn:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+.new-gradeGPA {
+  display: none;
+}
+#your-gpa-div {
+  padding: 1.5rem 3rem;
+  display:none;
+  text-align:center;
+}
+#your-gpa-p {
+  font-size: 2rem;
+}
+#footer {
+  height: 4rem;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+#footer p:hover {
+  color: black;
+}
+#footer p {
+  color: white;
+}
+
+/*/////////////////////*/
+/*/// MEDIA QUERIES ///*/
+/*/////////////////////*/
+@media only screen and (max-width: 750px){
+  .year-btn {
+    margin: 0px 5px 0px 5px;
+  }
+}
+@media only screen and (max-width: 650px){
+  .year-btn {
+    margin: 0.5rem;
+  }
+  #year-buttons-div {
+    width: 160px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+  #select-duration-div {
+    text-align: center;
+  }
+}
